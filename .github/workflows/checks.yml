@@ -16,9 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Docker Compose
-        uses: docker/compose-cli@v2.0.0
-
       - name: Build Docker containers
         run: docker compose build
 
