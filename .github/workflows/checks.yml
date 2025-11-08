@@ -20,7 +20,7 @@ jobs:
         run: docker compose build
 
       - name: Install dependencies
-        run: docker compose run --rm app sh -c "pip install -r requirements.dev.txt"
+        run: docker compose run --rm app sh -c "pip install -r /tmp/requirements.dev.txt"
 
       - name: Unit Tests
         run: docker compose run --rm app sh -c "python manage.py test"
