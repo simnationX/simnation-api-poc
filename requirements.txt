@@ -1,4 +1,12 @@
 # Python package dependencies for simnation-api-poc
+
 # Django web framework
-Django>=4.2.0,<5.0.0
+Django>=3.2.4,<3.3
+
+# Django REST framework and API Documentation
+djangorestframework>=3.12.4,<3.13
+drf-spectacular==0.15.1
+
+# PostgreSQL database
 psycopg2>=2.8.6,<2.9
+drf-spectacular>=0.15.1,<0.16
